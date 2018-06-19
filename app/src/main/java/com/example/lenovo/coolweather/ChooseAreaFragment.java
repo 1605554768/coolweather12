@@ -85,12 +85,12 @@ public class ChooseAreaFragment extends Fragment {
                 }
             }
         });
-        queryProvinces();
+       queryProvinces();
     }
     private void queryProvinces() {
         titleText.setText("中国");
         backButton.setVisibility(View.GONE);
-        provinceList= DataSupport.findAll(Province.class);
+   provinceList=DataSupport.findAll(Province.class);
         if (provinceList.size()>0){
             dataList.clear();
             for (Province province:provinceList){
